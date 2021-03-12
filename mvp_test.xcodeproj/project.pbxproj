@@ -10,6 +10,15 @@
 		FD1096F725F252AF00C015BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1096F625F252AF00C015BF /* AppDelegate.swift */; };
 		FD10970025F252BA00C015BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1096FF25F252BA00C015BF /* Assets.xcassets */; };
 		FD10970325F252BA00C015BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD10970125F252BA00C015BF /* LaunchScreen.storyboard */; };
+		FD11955725FB7A4C00FF11AB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11955325FB7A4C00FF11AB /* SignUpViewController.swift */; };
+		FD11955825FB7A4C00FF11AB /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11955425FB7A4C00FF11AB /* SignUpViewModel.swift */; };
+		FD11955925FB7A4C00FF11AB /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11955525FB7A4C00FF11AB /* SignUpConfigurator.swift */; };
+		FD11955A25FB7A4C00FF11AB /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD11955625FB7A4C00FF11AB /* SignUpView.xib */; };
+		FD11956225FB803E00FF11AB /* GallleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11955E25FB803E00FF11AB /* GallleryViewController.swift */; };
+		FD11956325FB803E00FF11AB /* GallleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11955F25FB803E00FF11AB /* GallleryViewModel.swift */; };
+		FD11956425FB803E00FF11AB /* GallleryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11956025FB803E00FF11AB /* GallleryConfigurator.swift */; };
+		FD11956525FB803E00FF11AB /* GallleryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD11956125FB803E00FF11AB /* GallleryView.xib */; };
+		FD11957025FB834E00FF11AB /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11956F25FB834E00FF11AB /* MainFlowCoordinator.swift */; };
 		FDF69B1625FA37B6006EBE68 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B1525FA37B5006EBE68 /* Coordinator.swift */; };
 		FDF69B1C25FA38F6006EBE68 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B1B25FA38F6006EBE68 /* AppCoordinator.swift */; };
 		FDF69B2B25FB432E006EBE68 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B2A25FB432E006EBE68 /* BaseViewController.swift */; };
@@ -20,6 +29,11 @@
 		FDF69B5225FB5E0B006EBE68 /* StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF69B5125FB5E0B006EBE68 /* StartView.xib */; };
 		FDF69B5625FB5E24006EBE68 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B5525FB5E24006EBE68 /* StartViewController.swift */; };
 		FDF69B5F25FB670B006EBE68 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B5E25FB670B006EBE68 /* AppSetup.swift */; };
+		FDF69B7725FB72B9006EBE68 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B7325FB72B9006EBE68 /* LoginViewController.swift */; };
+		FDF69B7825FB72B9006EBE68 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B7425FB72B9006EBE68 /* LoginViewModel.swift */; };
+		FDF69B7925FB72B9006EBE68 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B7525FB72B9006EBE68 /* LoginConfigurator.swift */; };
+		FDF69B7A25FB72B9006EBE68 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF69B7625FB72B9006EBE68 /* LoginView.xib */; };
+		FDF69B7D25FB72F7006EBE68 /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF69B7C25FB72F7006EBE68 /* AuthFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +42,15 @@
 		FD1096FF25F252BA00C015BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD10970225F252BA00C015BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD10970425F252BA00C015BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD11955325FB7A4C00FF11AB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FD11955425FB7A4C00FF11AB /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FD11955525FB7A4C00FF11AB /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
+		FD11955625FB7A4C00FF11AB /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		FD11955E25FB803E00FF11AB /* GallleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallleryViewController.swift; sourceTree = "<group>"; };
+		FD11955F25FB803E00FF11AB /* GallleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallleryViewModel.swift; sourceTree = "<group>"; };
+		FD11956025FB803E00FF11AB /* GallleryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallleryConfigurator.swift; sourceTree = "<group>"; };
+		FD11956125FB803E00FF11AB /* GallleryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GallleryView.xib; sourceTree = "<group>"; };
+		FD11956F25FB834E00FF11AB /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
 		FDF69B1525FA37B5006EBE68 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FDF69B1B25FA38F6006EBE68 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FDF69B2A25FB432E006EBE68 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +61,11 @@
 		FDF69B5125FB5E0B006EBE68 /* StartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartView.xib; sourceTree = "<group>"; };
 		FDF69B5525FB5E24006EBE68 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FDF69B5E25FB670B006EBE68 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		FDF69B7325FB72B9006EBE68 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FDF69B7425FB72B9006EBE68 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FDF69B7525FB72B9006EBE68 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		FDF69B7625FB72B9006EBE68 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		FDF69B7C25FB72F7006EBE68 /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +115,8 @@
 		FD10970D25F2540100C015BF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FDF69B6325FB6AD1006EBE68 /* MainFlow */,
+				FDF69B6225FB6AC9006EBE68 /* AuthFlow */,
 				FDF69B4725FB5DA0006EBE68 /* Start */,
 			);
 			path = Modules;
@@ -96,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				FDF69B1525FA37B5006EBE68 /* Coordinator.swift */,
-				FDF69B1B25FA38F6006EBE68 /* AppCoordinator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -121,6 +150,9 @@
 		FDF69B3925FB46DC006EBE68 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				FDF69B1B25FA38F6006EBE68 /* AppCoordinator.swift */,
+				FDF69B7C25FB72F7006EBE68 /* AuthFlowCoordinator.swift */,
+				FD11956F25FB834E00FF11AB /* MainFlowCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -134,6 +166,64 @@
 				FDF69B4E25FB5DFE006EBE68 /* StartConfigurator.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		FDF69B6225FB6AC9006EBE68 /* AuthFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FDF69B6525FB6AEA006EBE68 /* SignUp */,
+				FDF69B6425FB6AE3006EBE68 /* Login */,
+			);
+			path = AuthFlow;
+			sourceTree = "<group>";
+		};
+		FDF69B6325FB6AD1006EBE68 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FDF69B6725FB6B8C006EBE68 /* ExactItem */,
+				FDF69B6625FB6B77006EBE68 /* Gallery */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		FDF69B6425FB6AE3006EBE68 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FDF69B7325FB72B9006EBE68 /* LoginViewController.swift */,
+				FDF69B7425FB72B9006EBE68 /* LoginViewModel.swift */,
+				FDF69B7525FB72B9006EBE68 /* LoginConfigurator.swift */,
+				FDF69B7625FB72B9006EBE68 /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FDF69B6525FB6AEA006EBE68 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FD11955325FB7A4C00FF11AB /* SignUpViewController.swift */,
+				FD11955425FB7A4C00FF11AB /* SignUpViewModel.swift */,
+				FD11955525FB7A4C00FF11AB /* SignUpConfigurator.swift */,
+				FD11955625FB7A4C00FF11AB /* SignUpView.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FDF69B6625FB6B77006EBE68 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				FD11955E25FB803E00FF11AB /* GallleryViewController.swift */,
+				FD11955F25FB803E00FF11AB /* GallleryViewModel.swift */,
+				FD11956025FB803E00FF11AB /* GallleryConfigurator.swift */,
+				FD11956125FB803E00FF11AB /* GallleryView.xib */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		FDF69B6725FB6B8C006EBE68 /* ExactItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExactItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +283,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD11956525FB803E00FF11AB /* GallleryView.xib in Resources */,
 				FD10970325F252BA00C015BF /* LaunchScreen.storyboard in Resources */,
 				FD10970025F252BA00C015BF /* Assets.xcassets in Resources */,
+				FDF69B7A25FB72B9006EBE68 /* LoginView.xib in Resources */,
+				FD11955A25FB7A4C00FF11AB /* SignUpView.xib in Resources */,
 				FDF69B5225FB5E0B006EBE68 /* StartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,14 +301,25 @@
 			files = (
 				FDF69B4C25FB5DEE006EBE68 /* StartViewModel.swift in Sources */,
 				FDF69B5F25FB670B006EBE68 /* AppSetup.swift in Sources */,
+				FD11955925FB7A4C00FF11AB /* SignUpConfigurator.swift in Sources */,
+				FD11955825FB7A4C00FF11AB /* SignUpViewModel.swift in Sources */,
 				FD1096F725F252AF00C015BF /* AppDelegate.swift in Sources */,
 				FDF69B1625FA37B6006EBE68 /* Coordinator.swift in Sources */,
+				FDF69B7D25FB72F7006EBE68 /* AuthFlowCoordinator.swift in Sources */,
 				FDF69B1C25FA38F6006EBE68 /* AppCoordinator.swift in Sources */,
+				FDF69B7925FB72B9006EBE68 /* LoginConfigurator.swift in Sources */,
 				FDF69B2E25FB4349006EBE68 /* BaseNavigationController.swift in Sources */,
 				FDF69B4F25FB5DFE006EBE68 /* StartConfigurator.swift in Sources */,
+				FD11957025FB834E00FF11AB /* MainFlowCoordinator.swift in Sources */,
+				FD11955725FB7A4C00FF11AB /* SignUpViewController.swift in Sources */,
+				FD11956425FB803E00FF11AB /* GallleryConfigurator.swift in Sources */,
 				FDF69B2B25FB432E006EBE68 /* BaseViewController.swift in Sources */,
+				FDF69B7825FB72B9006EBE68 /* LoginViewModel.swift in Sources */,
+				FD11956325FB803E00FF11AB /* GallleryViewModel.swift in Sources */,
+				FD11956225FB803E00FF11AB /* GallleryViewController.swift in Sources */,
 				FDF69B5625FB5E24006EBE68 /* StartViewController.swift in Sources */,
 				FDF69B3225FB43AB006EBE68 /* UIColor+Extension.swift in Sources */,
+				FDF69B7725FB72B9006EBE68 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

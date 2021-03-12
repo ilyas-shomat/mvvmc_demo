@@ -32,6 +32,13 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(StartConfigurator().configureModule(delegate: self), animated: false)
     }
     
+    func showAuthFlow() {
+        let authFlowCoordinator = AuthFlowCoordinator(navigationController: navigationController)
+        authFlowCoordinator.delegate = self
+        addChildCoordinator(authFlowCoordinator)
+        authFlowCoordinator.start()
+    }
+    
 //    func showAuthenticationFlow() {
 //        let authFlowCoordinator = AuthFlowCoordinator(navigationController: navigationController)
 //        authFlowCoordinator.delegate = self
@@ -56,6 +63,7 @@ extension AppCoordinator: StartViewModelDelegate {
     
     func userUnAuthrized() {
         print("/// here need to show AuthFlow")
+        showAuthFlow()
     }
     
 //    func userNeedsToAuthenticate() {
@@ -69,10 +77,16 @@ extension AppCoordinator: StartViewModelDelegate {
 //    }
 }
 
+extension AppCoordinator: AuthFlowCoordinatorDelegate {
+    func userLoggedIn(coordinator: Coordinator) {
+    }
+    
+}
+
 // MARK: AuthFlowCoordinator Delegate
 
 //extension AppCoordinator: AuthFlowCoordinatorDelegate {
-//    func userPerformedAuthentication(coordinator: Coordinator) {
+//    func userPerformedAuthenYtication(coordinator: Coordinator) {
 //        removeChildCoordinator(coordinator)
 //        showDogsFlow()
 //    }

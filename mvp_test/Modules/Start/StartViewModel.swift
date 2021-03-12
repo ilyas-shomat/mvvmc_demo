@@ -25,12 +25,15 @@ class StartViewModel {
     }
     
     private func checkUserAuth() {
+        
+         userAuthorized = false
+        
         if userAuthorized == true {
-            print("/// user UnAuthorized")
+            print("/// user Authorized")
             delegate?.userAuthorized()
         }
         else {
-            print("/// user Authorized")
+            print("/// user UnAuthorized")
             delegate?.userUnAuthrized()
         }
     }

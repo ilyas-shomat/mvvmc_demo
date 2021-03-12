@@ -1,29 +1,32 @@
 //
-//  StartViewController.swift
+//  LoginViewController.swift
 //  mvp_test
 //
 //  Created by Ilyas Shomat on 12.03.2021.
+//  
 //
 
 import UIKit
 
 // MARK: - View Input/ViewModel Output
-protocol StartViewInput: class {
+protocol LoginViewInput: class {
     
 }
 
 // MARK: - View Output/ViewModel Insput
-protocol StartViewOutput: class {
+protocol LoginViewOutput: class {
     func loadViewModel()
+    func tapSignUpButton()
+    func tapLoginButtton()
 }
 
-class StartViewController: BaseViewController {
-
+class LoginViewController: BaseViewController {
+    
     //MARK: - Outlet properties
     
     //MARK: - Properties
     
-    var viewModel: StartViewOutput!
+    var viewModel: LoginViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +34,19 @@ class StartViewController: BaseViewController {
         viewModel.loadViewModel()
     }
     
+ 
     //MARK: - Public methods
 
-    func setViewModel(_ viewModel: StartViewOutput) {
+    func setViewModel(_ viewModel: LoginViewOutput) {
         self.viewModel = viewModel
+    }
+    
+    @IBAction func signUpButtonTap(_ sender: Any) {
+        viewModel.tapSignUpButton()
+    }
+    
+    @IBAction func loginButtonTap(_ sender: Any) {
+        viewModel.tapLoginButtton()
     }
     
     //MARK: - Private methods
@@ -44,7 +56,6 @@ class StartViewController: BaseViewController {
 }
 
 //MARK: - Release funcs from ViewModel
-extension StartViewController: StartViewInput {
+extension LoginViewController: LoginViewInput {
     
 }
-

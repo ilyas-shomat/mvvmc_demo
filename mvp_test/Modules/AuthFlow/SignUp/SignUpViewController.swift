@@ -1,50 +1,51 @@
 //
-//  StartViewController.swift
+//  SignUpViewController.swift
 //  mvp_test
 //
 //  Created by Ilyas Shomat on 12.03.2021.
+//  
 //
 
 import UIKit
 
 // MARK: - View Input/ViewModel Output
-protocol StartViewInput: class {
+protocol SignUpViewInput: class {
     
 }
 
 // MARK: - View Output/ViewModel Insput
-protocol StartViewOutput: class {
+protocol SignUpViewOutput: class {
     func loadViewModel()
 }
 
-class StartViewController: BaseViewController {
-
+class SignUpViewController: BaseViewController {
+    
     //MARK: - Outlet properties
     
     //MARK: - Properties
     
-    var viewModel: StartViewOutput!
+    var viewModel: SignUpViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDefaultStatements()
         viewModel.loadViewModel()
     }
-    
+ 
     //MARK: - Public methods
 
-    func setViewModel(_ viewModel: StartViewOutput) {
+    func setViewModel(_ viewModel: SignUpViewOutput) {
         self.viewModel = viewModel
     }
     
     //MARK: - Private methods
     
     private func setupDefaultStatements() {
+//        hideNavigationBar()
     }
 }
 
 //MARK: - Release funcs from ViewModel
-extension StartViewController: StartViewInput {
+extension SignUpViewController: SignUpViewInput {
     
 }
-
