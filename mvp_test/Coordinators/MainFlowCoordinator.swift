@@ -24,6 +24,32 @@ class MainFlowCoordinator: Coordinator {
     }
     
     func start() {
-        
+//        showGalleryScene()
+        setupTabBar()
     }
+    
+    
+    func setupTabBar() {
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [GallleryConfigurator().configureModule(delegate: self), ProfileConfigurator().configureModule(delegate: self), ExactItemConfigurator().configureModule(delegate: self)]
+        tabBarController.selectedIndex = 0
+
+        navigationController.pushViewController(tabBarController, animated: true)
+    }
+    
+    func showGalleryScene() {
+        navigationController.setViewControllers([GallleryConfigurator().configureModule(delegate: self)], animated: true)
+    }
+}
+
+extension MainFlowCoordinator: GallleryViewModelDelegate {
+    
+}
+
+extension MainFlowCoordinator: ProfileViewModelDelegate {
+    
+}
+
+extension MainFlowCoordinator: ExactItemViewModelDelegate {
+    
 }

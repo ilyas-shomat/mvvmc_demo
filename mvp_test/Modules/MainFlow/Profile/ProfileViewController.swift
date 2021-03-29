@@ -1,30 +1,30 @@
 //
-//  GallleryViewController.swift
+//  ProfileViewController.swift
 //  mvp_test
 //
-//  Created by Ilyas Shomat on 12.03.2021.
+//  Created by Ilyas Shomat on 29.03.2021.
 //  
 //
 
 import UIKit
 
 // MARK: - View Input/ViewModel Output
-protocol GallleryViewInput: class {
+protocol ProfileViewInput: class {
     
 }
 
 // MARK: - View Output/ViewModel Insput
-protocol GallleryViewOutput: class {
+protocol ProfileViewOutput: class {
     func loadViewModel()
 }
 
-class GallleryViewController: BaseViewController {
+class ProfileViewController: BaseViewController {
     
     //MARK: - Outlet properties
     
     //MARK: - Properties
     
-    var viewModel: GallleryViewOutput!
+    var viewModel: ProfileViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,19 +34,19 @@ class GallleryViewController: BaseViewController {
  
     //MARK: - Public methods
 
-    func setViewModel(_ viewModel: GallleryViewOutput) {
+    func setViewModel(_ viewModel: ProfileViewOutput) {
         self.viewModel = viewModel
     }
     
     //MARK: - Private methods
     
     private func setupDefaultStatements() {
-        self.tabBarItem = UITabBarItem(title: "Gallery", image: nil, selectedImage: nil)
-//        hideNavigationBar()
+        hideNavigationBar()
+        self.tabBarItem = UITabBarItem(title: "Exact", image: nil, selectedImage: nil)
     }
 }
 
 //MARK: - Release funcs from ViewModel
-extension GallleryViewController: GallleryViewInput {
+extension ProfileViewController: ProfileViewInput {
     
 }

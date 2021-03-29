@@ -39,25 +39,19 @@ class AppCoordinator: Coordinator {
         authFlowCoordinator.start()
     }
     
-//    func showAuthenticationFlow() {
-//        let authFlowCoordinator = AuthFlowCoordinator(navigationController: navigationController)
-//        authFlowCoordinator.delegate = self
-//        addChildCoordinator(authFlowCoordinator)
-//        authFlowCoordinator.start()
-//    }
-    
-//    func showDogsFlow() {
-//        let dogsFlowCoordinator = DogsFlowCoordinator(navigationController: navigationController)
-//        dogsFlowCoordinator.delegate = self
-//        addChildCoordinator(dogsFlowCoordinator)
-//        dogsFlowCoordinator.start()
-//    }
+    func showMainFlow() {
+        let mainFlowCoordinator = MainFlowCoordinator(navigationController: navigationController)
+        mainFlowCoordinator.delegate = self
+        addChildCoordinator(mainFlowCoordinator)
+        mainFlowCoordinator.start()
+    }
 }
 
 // MARK: StartPresenter Delegate
 
 extension AppCoordinator: StartViewModelDelegate {
     func userAuthorized() {
+        showMainFlow()
         print("/// here need to show MainFlow")
     }
     
@@ -65,35 +59,15 @@ extension AppCoordinator: StartViewModelDelegate {
         print("/// here need to show AuthFlow")
         showAuthFlow()
     }
-    
-//    func userNeedsToAuthenticate() {
-//        showAuthenticationFlow()
-//
-//    }
-//
-//    func userIsAuthenticated() {
-//        showDogsFlow()
-//
-//    }
 }
 
 extension AppCoordinator: AuthFlowCoordinatorDelegate {
     func userLoggedIn(coordinator: Coordinator) {
+        removeChildCoordinator(coordinator)
+        showMainFlow()
     }
-    
 }
 
-// MARK: AuthFlowCoordinator Delegate
-
-//extension AppCoordinator: AuthFlowCoordinatorDelegate {
-//    func userPerformedAuthenYtication(coordinator: Coordinator) {
-//        removeChildCoordinator(coordinator)
-//        showDogsFlow()
-//    }
-//}
-
-// MARK: DogsFlowCoordinator Delegate
-
-//extension AppCoordinator: DogsFlowCoordinatorDelegate {
-//
-//}
+extension AppCoordinator: MainFlowCoordinatorDelegate {
+    
+}

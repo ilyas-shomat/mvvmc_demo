@@ -26,7 +26,7 @@ class StartViewModel {
     
     private func checkUserAuth() {
         
-         userAuthorized = false
+         userAuthorized = true
         
         if userAuthorized == true {
             print("/// user Authorized")

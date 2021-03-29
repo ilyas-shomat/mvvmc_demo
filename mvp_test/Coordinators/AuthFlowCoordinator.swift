@@ -39,14 +39,12 @@ class AuthFlowCoordinator: Coordinator {
 
 extension AuthFlowCoordinator: LoginViewModelDelegate {
     func moveToGallery() {
-        <#code#>
+        delegate?.userLoggedIn(coordinator: self)
     }
     
     func moveToSignUpScene() {
         showSignUpScene()
-    }
-    
-    
+    }    
 }
 
 extension AuthFlowCoordinator: SignUpViewModelDelegate {
